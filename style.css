@@ -10,9 +10,11 @@ body {
 }
 
 nav {
-  padding: 22px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
   background-color: green;
 }
 nav h1 {
@@ -23,7 +25,10 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 32px;
+}
+ul:last-child {
+  margin-right: 72px;
 }
 main {
   padding: 0px 24px;
@@ -34,4 +39,31 @@ main {
 }
 h3 {
   margin-bottom: 32px;
+}
+
+.modal {
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  text-align: center;
+  width: 300px;
+}
+.modal::backdrop {
+  background-color: #f4f4f4;
+  opacity: 0.5;
+}
+button {
+  margin-top: 22px;
+  padding: 12px 22px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(152, 184, 152);
+}
+.open-btn {
+  margin-left: 24px;
 }
